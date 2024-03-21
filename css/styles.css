@@ -232,6 +232,10 @@ body {
   margin-bottom: 8px;
 }
 
+.team .list-description {
+  margin-bottom: 8px;
+}
+
 .social-list {
   align-items: center;
   display: flex;
@@ -239,19 +243,15 @@ body {
   justify-content: center;
   list-style: none;
   padding-left: 0;
-  padding-top: 8px;
 }
 
 .social-button {
   align-items: center;
   background-color: var(--theme-secondary);
-  border: none;
   border-radius: 50%;
-  cursor: pointer;
   display: flex;
   height: 40px;
   justify-content: center;
-  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 40px;
 }
@@ -268,6 +268,11 @@ body {
 
 .social-button svg use {
   transform: translate(12px, 12px);
+}
+
+.team .social-button:hover,
+.team .social-button:focus {
+  background-color: var(--link-hover);
 }
 
 .customers {
@@ -288,12 +293,10 @@ body {
 }
 
 .customer {
-  background: none;
   border: 1px solid var(--grey);
   border-radius: 4px;
-  cursor: pointer;
+  display: inline-block;
   height: 88px;
-  padding: 0;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -340,7 +343,12 @@ body {
 }
 
 .footer .title {
+  font-weight: 500;
   margin-bottom: 16px;
+}
+
+.footer .social-list {
+  gap: 16px;
 }
 
 .footer .social-button use {
